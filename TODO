@@ -1,0 +1,12 @@
+# affichage du ca au niveau du dasboard
+#date d'arrivé du technicien inf date today
+# date entree inf date aujourd'hui
+#gesttion du ca
+#boutons vehicule detail
+
+
+#quantite default=1
+#immatriculation unique
+#pour les dates, gerer la mise à jour(le value)
+############################Done
+# clacule du cout de la panne + les pieces(ok panne detail)

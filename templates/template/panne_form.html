@@ -1,0 +1,52 @@
+
+
+
+
+{% extends 'template/base.html' %}
+{% block content %}
+<div class="content-wrapper">
+    <div class="col-md-6 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                {% if pk %}
+                <h4 class="card-title">Modifier la panne</h4>
+                {% else %}
+                <h4 class="card-title">Ajouter Une panne</h4>
+                {% endif %}
+                <form method="post" action="">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        {{ form.libelle.label_tag }}
+                        {{ form.libelle }}
+                        {% for error in form.libelle.errors %}
+                        <p class="text-danger">{{ error }}</p>
+                        {% endfor %}
+                    </div>
+                    <div class="form-group">
+                        {{ form.desc.label_tag }}
+                        {{ form.desc }}
+                        {% for error in form.desc.errors %}
+                        <p class="text-danger">{{ error }}</p>
+                        {% endfor %}
+                    </div>
+                    <div class="form-group">
+                        {{ form.cout.label_tag }}
+                        {{ form.cout }}
+                        {% for error in form.cout.errors %}
+                        <p class="text-danger">{{ error }}</p>
+                        {% endfor %}
+                    </div>
+                    <div class="form-group">
+                        {{ form.piece.label_tag }}
+                        {{ form.piece }}
+                        {% for error in form.piece.errors %}
+                        <p class="text-danger">{{ error }}</p>
+                        {% endfor %}
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enregistrer</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

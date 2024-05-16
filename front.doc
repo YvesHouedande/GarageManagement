@@ -1,0 +1,84 @@
+
+Pour le developpement front, ajouter des elements necessaire pour la 
+realisation de differents actions.
+ 
+NB: *Au niveau de chaque détail, fournir un bouton modifier, supprimer.
+    *Ajouter des formulaires pour la creation de vehicules, clients, Pannes.
+    *
+
+
+
+##Mise en place dashboard
+    ##btn(Nouveau vehicule)
+        Ce bouton au niveau du dashboard permet d'ajouter un vehicule
+    ##Nomnbre dEntre(cliqueque pour voir la liste des entrés)
+    ##Nomnbre Sortie(cliqueque pour voir la liste des sorties)
+    ##Nombre de Techniciens(cliquables pour voir la liste des techniciens)
+    ##Nombre de clients(cli...)
+    ##Nombre de vehicules(cli...)
+    ##Nombre de reparartion(cli)
+    ##chiffre daffaires
+    ##salaire total des techiniciens
+##sideBar
+    #vehicules
+    #paye
+    #clients
+    #techniciens
+    #pieces
+
+##page de connexion
+##lLister les vehicules(Imatriculation, marqueModel, carburant, propritaire)
+"""
+en Listant, il faut offrir la possibilité de modifier les information sur un vehicule.
+le bouton de modif peut contenir un mener ver une page qui permet la modif ou la suppresion
+Un formulaire qui permet la mise à jour ou la modification.
+**Un vehicule possede des entées, ainsi, Pour ajouter des entres, il faut un bouton au niveau du 
+listin: +: Permet d'ajouter une panne
+        voire: renvoie sur une page pour voir les information du 
+        vehicule->Page détail 
+
+        on aura trois boutons (modifier,supprimer et details) permettant de de faire les mises a jours et afficher les details sur un vehicule
+
+"""
+    #Filtres(en reparation, reparer, essence, diesel)
+    #recherche()
+##clic détail vehicule(dashboard)
+"""
+Un vehicule possede des entrées, qui correpond au fait que le vehicule soit venu(une, deux,..)
+pour sa reparation.
+"""
+    ##Ajouter un bouton pour permettre de voir les entres des vehicules:Entrées
+    ## Nombre d'entrés(cliquable pour voir les entrés)
+    ## tous les details de bases
+    ## Nombre de reparations (ciquable pour voir les reparartions)
+    ## Nombre de pieces changer(clicquable pour voir les piecs )
+    ## le cout total
+    ## Nombre de mecano ayant travailler vehicules(cliquablespour voir les mecanos)
+## liste des techniniciens(nom, prenom, specialite, salaire)
+    Filtre(Mecanique, electronique, Habitacles)
+    ##recherche()
+##detail techiniciens(information de base(dashboard))
+    #nombre de vehicule reparer -(clcquable pour voir les vehicules)
+    #date darrivé dans le garage*
+    #nombre dannees dans le garage
+
+##Listes des clients(info de base)
+    #rechechre
+
+##Detail clients(dasboard), information de base +
+"""
+ajouter un btn pour permettre la modif qui renvoie vers le formulaire client
+""
+    ## Nombres de vehicules(cliquables pour voir les vehicules)
+    ## depenses total sur tous ses vehicules
+
+## liste des panes
+"""
+    A un panne, on peut rajouter des pieces,
+    En listant donc, il faut rajouter deux btn pour chaque intem:+Piece,-Piece.
+    +Piece: permet d'ajouter une piece à la panne
+    -Piece: permet de suppreimer une piece de la panne.
+    voire: cela mene vers une page detail
+"""
+    #recherche
+    #filtre par statut

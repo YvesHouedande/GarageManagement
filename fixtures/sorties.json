@@ -1,0 +1,48 @@
+[
+    {
+      "model": "CarManagement.sortievehicule",
+      "pk": 1,
+      "fields": {
+        "entre": 1,
+        "moment": "2022-01-20",
+        "cout": 150
+      }
+    },
+    {
+      "model": "CarManagement.sortievehicule",
+      "pk": 2,
+      "fields": {
+        "entre": 2,
+        "moment": "2022-02-25",
+        "cout": 200
+      }
+    },
+    {
+      "model": "CarManagement.sortievehicule",
+      "pk": 3,
+      "fields": {
+        "entre": 3,
+        "moment": "2022-03-15",
+        "cout": 120
+      }
+    },
+    {
+      "model": "CarManagement.sortievehicule",
+      "pk": 4,
+      "fields": {
+        "entre": 4,
+        "moment": "2022-04-10",
+        "cout": 180
+      }
+    },
+    {
+      "model": "CarManagement.sortievehicule",
+      "pk": 5,
+      "fields": {
+        "entre": 5,
+        "moment": "2022-05-23",
+        "cout": 250
+      }
+    }
+  ]
+  

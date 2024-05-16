@@ -1,0 +1,80 @@
+[
+    {
+      "model": "CarManagement.client",
+      "pk": 1,
+      "fields": {
+        "nom": "Dupont",
+        "prenom": "Jean",
+        "mail": "jean.dupont@example.com",
+        "tel": 123456789,
+        "dateAdhesion": "2022-01-15"
+      }
+    },
+    {
+      "model": "CarManagement.client",
+      "pk": 2,
+      "fields": {
+        "nom": "Martin",
+        "prenom": "Sophie",
+        "mail": "sophie.martin@example.com",
+        "tel": 987654321,
+        "dateAdhesion": "2022-02-20"
+      }
+    },
+    {
+      "model": "CarManagement.client",
+      "pk": 3,
+      "fields": {
+        "nom": "Lefebvre",
+        "prenom": "Pierre",
+        "mail": "pierre.lefebvre@example.com",
+        "tel": 456789123,
+        "dateAdhesion": "2022-03-10"
+      }
+    },
+    {
+      "model": "CarManagement.client",
+      "pk": 4,
+      "fields": {
+        "nom": "Dubois",
+        "prenom": "Marie",
+        "mail": "marie.dubois@example.com",
+        "tel": 789123456,
+        "dateAdhesion": "2022-04-05"
+      }
+    },
+    {
+      "model": "CarManagement.client",
+      "pk": 5,
+      "fields": {
+        "nom": "Rousseau",
+        "prenom": "Philippe",
+        "mail": "philippe.rousseau@example.com",
+        "tel": 321654987,
+        "dateAdhesion": "2022-05-18"
+      }
+    },
+    {
+      "model": "CarManagement.client",
+      "pk": 6,
+      "fields": {
+        "nom": "Garcia",
+        "prenom": "Isabelle",
+        "mail": "isabelle.garcia@example.com",
+        "tel": 654987321,
+        "dateAdhesion": "2022-06-30"
+      }
+    },
+    {
+      "model": "CarManagement.client",
+      "pk": 7,
+      "fields": {
+        "nom": "Moreau",
+        "prenom": "Luc",
+        "mail": "luc.moreau@example.com",
+        "tel": 987321654,
+        "dateAdhesion": "2022-07-12"
+      }
+    }
+  ]
+  

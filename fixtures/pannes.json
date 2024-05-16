@@ -1,0 +1,53 @@
+[
+    {
+      "model": "CarManagement.panne",
+      "pk": 1,
+      "fields": {
+        "libelle": "Problème de démarrage",
+        "desc": "Lorsque le véhicule ne démarre pas, plusieurs éléments peuvent être à l'origine du problème. Les causes courantes incluent une batterie déchargée, un démarreur défectueux ou un problème avec le système d'allumage. Pour résoudre ce problème, vérifiez d'abord l'état de la batterie. Si la batterie est en bon état, vérifiez le fonctionnement du démarreur et du système d'allumage. Les pièces nécessaires peuvent inclure une batterie neuve, un démarreur de remplacement et des bougies d'allumage.",
+        "cout": 100,
+        "piece": [1, 6]
+      }
+    },
+    {
+      "model": "CarManagement.panne",
+      "pk": 2,
+      "fields": {
+        "libelle": "Surchauffe moteur",
+        "desc": "La surchauffe moteur peut être causée par un refroidissement insuffisant du liquide de refroidissement ou un dysfonctionnement du système de refroidissement. Pour résoudre ce problème, vérifiez le niveau de liquide de refroidissement et l'état du radiateur. Assurez-vous également que le ventilateur du radiateur fonctionne correctement. Les pièces nécessaires peuvent inclure un radiateur de remplacement, un thermostat et un ventilateur de refroidissement.",
+        "cout": 150,
+        "piece": [5, 7, 8]
+      }
+    },
+    {
+      "model": "CarManagement.panne",
+      "pk": 3,
+      "fields": {
+        "libelle": "Freins grinçants",
+        "desc": "Les freins grinçants sont souvent dus à une usure excessive des plaquettes de frein ou à une accumulation de saleté sur les disques de frein. Pour résoudre ce problème, remplacez les plaquettes de frein et nettoyez les disques de frein. Vérifiez également l'état des étriers de frein. Les pièces nécessaires peuvent inclure des plaquettes de frein neuves, des disques de frein et des étriers de frein.",
+        "cout": 80,
+        "piece": [4]
+      }
+    },
+    {
+      "model": "CarManagement.panne",
+      "pk": 4,
+      "fields": {
+        "libelle": "Fuite de liquide de frein",
+        "desc": "Les fuites de liquide de frein peuvent être causées par des joints défectueux ou des tuyaux endommagés dans le système de freinage. Pour résoudre ce problème, localisez la source de la fuite et remplacez les joints ou les tuyaux défectueux. Assurez-vous de purger le système de freinage après avoir effectué les réparations. Les pièces nécessaires peuvent inclure des joints de frein, des tuyaux de frein et du liquide de frein.",
+        "cout": 120,
+        "piece": [4]
+      }
+    },
+    {
+      "model": "CarManagement.panne",
+      "pk": 5,
+      "fields": {
+        "libelle": "Problème de direction assistée",
+        "desc": "Les problèmes de direction assistée peuvent être causés par une fuite de liquide de direction assistée ou un dysfonctionnement de la pompe de direction assistée. Pour résoudre ce problème, vérifiez l'état du liquide de direction assistée et inspectez la pompe de direction assistée pour les fuites ou les dommages. Les pièces nécessaires peuvent inclure du liquide de direction assistée, une pompe de direction assistée et des tuyaux de direction assistée.",
+        "cout": 200,
+        "piece": [5]
+      }
+    }
+  ]
+  

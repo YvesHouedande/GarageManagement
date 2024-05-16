@@ -1,0 +1,28 @@
+{% extends 'template/base.html' %}
+
+{% block content %}
+<div class="content-wrapper">
+    <div class="col-md-9 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                {% if pk %}
+                    <h4 class="card-title">Modifier la quantité de la pièce: <span style="color: aqua;">{{object.piece.libelle}}</span> de la panne <span style="color: aqua;">{{object.panne.libelle}}</span></h4>
+                {% else %}
+                    <h4 class="card-title">Ajouter la quantité</h4>
+                {% endif %}
+                <form method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        {{ form.quantite.label_tag }}
+                        {{ form.quantite }}
+                        {% for error in form.quantite.errors %}
+                        <p class="text-danger">{{ error }}</p>
+                        {% endfor %}
+                    </div>
+                    <button type="submit" class="btn btn-primary">Valider</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

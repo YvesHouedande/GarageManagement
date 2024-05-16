@@ -1,0 +1,38 @@
+{% extends 'template/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="content-wrapper">
+    <!-- #######################titre diviseur-->
+    <div class="row">
+        <div class="col-12 grid-margin stretch-card">
+            <div class="card corona-gradient-card">
+                <div class="card-body py-0 px-0 px-sm-3">
+                    <div class="row align-items-center">
+                        <div class="col-4 col-sm-3 col-xl-2">
+                            <img src="{% static 'assets/images/dashboard/Group126@2x.png' %}"
+                                class="gradient-corona-img img-fluid" alt="">
+                        </div>
+                        <div class="col-5 col-sm-7 col-xl-8 p-0">
+                            <h3 class="mb-1 mb-sm-0">Souhaitez vous Supprimer l'objet {{klass}}: {{object}} ?</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="row">
+    <div class="col-md-3">
+        <a href="{{ object.get_absolute_url }}" class="btn btn-primary">Annuler</a>
+    </div>
+    <div class="col-md-3">
+        <form method="post">
+            {% csrf_token %}
+            <input class="btn btn-primary" type="submit" value="Confirmer la suppression">
+        </form>
+    </div>
+</div>
+
+</div>
+{% endblock %}

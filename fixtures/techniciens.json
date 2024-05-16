@@ -1,0 +1,68 @@
+[
+    {
+      "model": "CarManagement.technicien",
+      "pk": 1,
+      "fields": {
+        "specialite": "MECANIQUE",
+        "nom": "Durand",
+        "prenom": "Pierre",
+        "mail": "pierre.durand@example.com",
+        "tel": 123456789,
+        "salaire": 3000,
+        "date_arrive": "2020-01-15"
+      }
+    },
+    {
+      "model": "CarManagement.technicien",
+      "pk": 2,
+      "fields": {
+        "specialite": "TOLERIE",
+        "nom": "Martin",
+        "prenom": "Sophie",
+        "mail": "sophie.martin@example.com",
+        "tel": 987654321,
+        "salaire": 3200,
+        "date_arrive": "2020-02-20"
+      }
+    },
+    {
+      "model": "CarManagement.technicien",
+      "pk": 3,
+      "fields": {
+        "specialite": "ELECTRONIQUE",
+        "nom": "Lefebvre",
+        "prenom": "Jean",
+        "mail": "jean.lefebvre@example.com",
+        "tel": 456789123,
+        "salaire": 3500,
+        "date_arrive": "2020-03-10"
+      }
+    },
+    {
+      "model": "CarManagement.technicien",
+      "pk": 4,
+      "fields": {
+        "specialite": "CLIMATISATION",
+        "nom": "Dubois",
+        "prenom": "Marie",
+        "mail": "marie.dubois@example.com",
+        "tel": 789123456,
+        "salaire": 3100,
+        "date_arrive": "2020-04-05"
+      }
+    },
+    {
+      "model": "CarManagement.technicien",
+      "pk": 5,
+      "fields": {
+        "specialite": "HABITACLE",
+        "nom": "Rousseau",
+        "prenom": "Luc",
+        "mail": "luc.rousseau@example.com",
+        "tel": 321654987,
+        "salaire": 3300,
+        "date_arrive": "2020-05-18"
+      }
+    }
+  ]
+  

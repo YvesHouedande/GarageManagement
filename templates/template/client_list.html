@@ -1,0 +1,62 @@
+{% extends 'template/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="content-wrapper">
+    <!-- #######################titre diviseur-->
+    <div class="row m-2">
+        <!-- Recherche -->
+        <ul class="navbar-nav w-100">
+            <li class="nav-item w-100">
+                <form method="GET" class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
+                    <input type="text" name="q" class="form-control"
+                        placeholder="Faire une recherche:nom, prenom, tel" value="{{ request.GET.q }}">
+                    <button type="submit" class="btn btn-primary ml-2">Rechercher</button>
+                </form>
+            </li>
+        </ul>
+    </div>
+    <div class="col-lg-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Liste des Clients</h4>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Nom et Prenom</th>
+                                <th>Mail</th>
+                                <th>Tel</th>
+                                <th>Date Adhesion</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            {% for object in objects %}
+                            <tr>
+                                <td>{{object.pk}}</td>
+                                <td>{{object.nom}} {{object.prenom}}</td>
+                                <td>{{object.mail}}</td>
+                                <td>{{object.tel}}</td>
+                                <td>{{object.dateAdhesion}}</td>
+                                <td><a href="{% url 'client-create' pk=object.pk %}"
+                                        class="btn btn-primary ">Modifier</a>
+
+                                    <a href="{% url 'detail-client' pk=object.pk %}" class="btn btn-info ">Voire</a>
+
+                                    <a href="{% url 'confirm-delete' klass='Client' pk=object.pk %}"
+                                        class="btn btn-danger ">supprimer</a>
+
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

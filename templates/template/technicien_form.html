@@ -1,0 +1,78 @@
+{% extends 'template/base.html' %}
+
+{% block content %}
+<div class="content-wrapper">
+  <div class="col-md-6 grid-margin stretch-card">
+    <div class="card">
+      <div class="card-body">
+        {% if pk %}
+        <h4 class="card-title">Modifier Le Technicien</h4>
+        {% else %}
+        <h4 class="card-title">Ajouter Un Nouveau Technicien</h4>
+        {% endif %}
+        <form method="post" enctype="multipart/form-data">
+          {% csrf_token %}
+          <div class="form-group">
+            {{ form.nom.label_tag }}
+            {{ form.nom }}
+            {% for error in form.nom.errors %}
+            <p class="text-danger">{{ error }}</p>
+            {% endfor %}
+          </div>
+          <div class="form-group">
+            {{ form.prenom.label_tag }}
+            {{ form.prenom }}
+            {% for error in form.prenom.errors %}
+            <p class="text-danger">{{ error }}</p>
+            {% endfor %}
+          </div>
+          <div class="form-group">
+            {{ form.mail.label_tag }}
+            {{ form.mail }}
+            {% for error in form.mail.errors %}
+            <p class="text-danger">{{ error }}</p>
+            {% endfor %}
+          </div>
+          <div class="form-group">
+            {{ form.tel.label_tag }}
+            {{ form.tel }}
+            {% for error in form.tel.errors %}
+            <p class="text-danger">{{ error }}</p>
+            {% endfor %}
+          </div>
+          <div class="form-group">
+            {{ form.avatar.label_tag }}
+            {{ form.avatar }}
+            {% for error in form.avatar.errors %}
+            <p class="text-danger">{{ error }}</p>
+            {% endfor %}
+          </div>
+          <div class="form-group">
+            {{ form.salaire.label_tag }}
+            {{ form.salaire }}
+            {% for error in form.salaire.errors %}
+            <p class="text-danger">{{ error }}</p>
+            {% endfor %}
+          </div>
+          <div class="form-group">
+            {{ form.specialite.label_tag }}
+            {{ form.specialite }}
+            {% for error in form.specialite.errors %}
+            <p class="text-danger">{{ error }}</p>
+            {% endfor %}
+          </div>
+          <div class="form-group">
+            {{ form.date_arrive.label_tag }}
+            {{ form.date_arrive }}
+            {% for error in form.date_arrive.errors %}
+            <p class="text-danger">{{ error }}</p>
+            {% endfor %}
+          </div>
+          
+          <button type="submit" class="btn btn-primary">Enregistrer</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

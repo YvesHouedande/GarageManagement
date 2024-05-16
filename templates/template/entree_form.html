@@ -1,0 +1,56 @@
+{% extends 'template/base.html' %}
+
+{% block content %}
+<div class="content-wrapper">
+<div class="col-md-6 grid-margin stretch-card">
+    <div class="card">
+      <div class="card-body">
+      {% if pk %}
+      <h4 class="card-title">Modifier L'Entrée</h4>
+      {% else %}
+      <h4 class="card-title">Ajouter Une Nouvelle Entrée</h4>
+      {% endif %}
+        <form method="post">
+          {% csrf_token %}
+          <div class="form-group">
+            {{ form.moment.label_tag }}
+            {{ form.moment }}
+            {% for error in form.moment.errors %}
+            <p class="text-danger">{{ error }}</p>
+            {% endfor %}
+          </div>
+          <div class="form-group">
+            {{ form.raison.label_tag }}
+            {{ form.raison }}
+            {% for error in form.raison.errors %}
+            <p class="text-danger">{{ error }}</p>
+            {% endfor %}
+          </div>
+          <div class="form-group">
+            {{ form.techniciens.label_tag }}
+            {{ form.techniciens }}
+            {% for error in form.techniciens.errors %}
+            <p class="text-danger">{{ error }}</p>
+            {% endfor %}
+          </div>
+          <div class="form-group">
+            {{ form.pannes.label_tag }}
+            {{ form.pannes }}
+            {% for error in form.pannes.errors %}
+            <p class="text-danger">{{ error }}</p>
+            {% endfor %}
+          </div>
+          <div class="form-group">
+            {{ form.vehicule.label_tag }}
+            {{ form.vehicule }}
+            {% for error in form.vehicule.errors %}
+            <p class="text-danger">{{ error }}</p>
+            {% endfor %}
+          </div>          
+          <button type="submit" class="btn btn-primary">Enregistrer</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

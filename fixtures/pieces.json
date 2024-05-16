@@ -1,0 +1,91 @@
+[
+    {
+      "model": "CarManagement.piece",
+      "pk": 1,
+      "fields": {
+        "libelle": "Amortisseur avant gauche",
+        "ref": "AMO001",
+        "desc": "Amortisseur de qualité supérieure pour la suspension avant gauche. Conçu pour offrir un confort de conduite optimal et une stabilité exceptionnelle sur une variété de surfaces routières.",
+        "prix": 120,
+        "image": "amortisseur_avant.jpeg"
+      }
+    },
+    {
+      "model": "CarManagement.piece",
+      "pk": 2,
+      "fields": {
+        "libelle": "Filtre à huile standard",
+        "ref": "FIL002",
+        "desc": "Filtre à huile standard compatible avec la plupart des moteurs à combustion. Filtration efficace garantissant une protection maximale du moteur contre les particules et les impuretés.",
+        "prix": 15,
+        "image": "uploads/filtre_a_huile.jpeg"
+      }
+    },
+    {
+      "model": "CarManagement.piece",
+      "pk": 3,
+      "fields": {
+        "libelle": "Injecteur moteur diesel",
+        "ref": "INJ003",
+        "desc": "Injecteur de carburant de haute qualité pour moteurs diesel. Conçu pour fournir une pulvérisation de carburant précise et efficace, assurant une combustion optimale et une performance moteur maximale.",
+        "prix": 200,
+        "image": "injecteur_moteur.jpeg"
+      }
+    },
+    {
+      "model": "CarManagement.piece",
+      "pk": 4,
+      "fields": {
+        "libelle": "Plaquette de frein avant",
+        "ref": "PLA004",
+        "desc": "Plaquette de frein de qualité OEM pour l'ensemble des roues avant. Matériaux de friction de haute qualité assurant un freinage sûr et fiable dans toutes les conditions de conduite.",
+        "prix": 50,
+        "image": "plaquette.jpeg"
+      }
+    },
+    {
+      "model": "CarManagement.piece",
+      "pk": 5,
+      "fields": {
+        "libelle": "Pompe à eau",
+        "ref": "POM005",
+        "desc": "Pompe à eau de remplacement de qualité supérieure pour le système de refroidissement du moteur. Conçue pour assurer un débit d'eau optimal et un refroidissement efficace du moteur, garantissant ainsi une performance et une durabilité maximales.",
+        "prix": 80,
+        "image": "pompe_eau.jpeg"
+      }
+    },
+    {
+      "model": "CarManagement.piece",
+      "pk": 6,
+      "fields": {
+        "libelle": "Bougies d'allumage",
+        "ref": "BOU006",
+        "desc": "Bougies d'allumage de haute qualité pour moteurs à essence. Assure une combustion propre et efficace, garantissant une puissance moteur optimale et une consommation de carburant réduite.",
+        "prix": 10,
+        "image": "bougie_allumage.jpeg"
+      }
+    },
+    {
+      "model": "CarManagement.piece",
+      "pk": 7,
+      "fields": {
+        "libelle": "Roulement de roue",
+        "ref": "ROU007",
+        "desc": "Roulement de roue de qualité OEM pour un fonctionnement lisse et silencieux des roues du véhicule. Conçu pour une longue durée de vie et une résistance élevée à l'usure.",
+        "prix": 30,
+        "image": "roulement.jpeg"
+      }
+    },
+    {
+      "model": "CarManagement.piece",
+      "pk": 8,
+      "fields": {
+        "libelle": "Courroie de distribution",
+        "ref": "COU008",
+        "desc": "Courroie de distribution de remplacement de qualité supérieure pour la synchronisation précise du moteur. Fabriquée à partir de matériaux de haute qualité pour une durabilité et une fiabilité maximales.",
+        "prix": 70,
+        "image": "courroie.jpeg"
+      }
+    }
+  ]
+  

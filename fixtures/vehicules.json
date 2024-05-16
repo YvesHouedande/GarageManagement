@@ -1,0 +1,211 @@
+[
+    {
+      "model": "CarManagement.vehicule",
+      "pk": 1,
+      "fields": {
+        "proprietaire": 1,
+        "carburant": "Essence",
+        "libelle": "Renault Clio",
+        "immatriculation": "AB-123-CD",
+        "couleur": "Rouge",
+        "poids": 1200,
+        "date_arrive": "2022-01-15"
+      }
+    },
+    {
+      "model": "CarManagement.vehicule",
+      "pk": 2,
+      "fields": {
+        "proprietaire": 2,
+        "carburant": "Diesel",
+        "libelle": "Peugeot 208",
+        "immatriculation": "EF-456-GH",
+        "couleur": "Noir",
+        "poids": 1300,
+        "date_arrive": "2022-02-20"
+      }
+    },
+    {
+      "model": "CarManagement.vehicule",
+      "pk": 3,
+      "fields": {
+        "proprietaire": 3,
+        "carburant": "Essence",
+        "libelle": "Volkswagen Golf",
+        "immatriculation": "IJ-789-KL",
+        "couleur": "Blanc",
+        "poids": 1250,
+        "date_arrive": "2022-03-10"
+      }
+    },
+    {
+      "model": "CarManagement.vehicule",
+      "pk": 4,
+      "fields": {
+        "proprietaire": 4,
+        "carburant": "Essence",
+        "libelle": "Ford Focus",
+        "immatriculation": "MN-012-OP",
+        "couleur": "Bleu",
+        "poids": 1220,
+        "date_arrive": "2022-04-05"
+      }
+    },
+    {
+      "model": "CarManagement.vehicule",
+      "pk": 5,
+      "fields": {
+        "proprietaire": 5,
+        "carburant": "Diesel",
+        "libelle": "Toyota Yaris",
+        "immatriculation": "QR-345-ST",
+        "couleur": "Gris",
+        "poids": 1280,
+        "date_arrive": "2022-05-18"
+      }
+    },
+    {
+      "model": "CarManagement.vehicule",
+      "pk": 6,
+      "fields": {
+        "proprietaire": 6,
+        "carburant": "Essence",
+        "libelle": "Audi A3",
+        "immatriculation": "UV-678-WX",
+        "couleur": "Noir",
+        "poids": 1350,
+        "date_arrive": "2022-06-30"
+      }
+    },
+    {
+      "model": "CarManagement.vehicule",
+      "pk": 7,
+      "fields": {
+        "proprietaire": 7,
+        "carburant": "Diesel",
+        "libelle": "BMW Serie 1",
+        "immatriculation": "YZ-901-AB",
+        "couleur": "Blanc",
+        "poids": 1320,
+        "date_arrive": "2022-07-12"
+      }
+    },
+    {
+      "model": "CarManagement.vehicule",
+      "pk": 8,
+      "fields": {
+        "proprietaire": 1,
+        "carburant": "Essence",
+        "libelle": "Mercedes Classe A",
+        "immatriculation": "CD-234-EF",
+        "couleur": "Rouge",
+        "poids": 1250,
+        "date_arrive": "2022-08-25"
+      }
+    },
+    {
+      "model": "CarManagement.vehicule",
+      "pk": 9,
+      "fields": {
+        "proprietaire": 2,
+        "carburant": "Diesel",
+        "libelle": "Fiat 500",
+        "immatriculation": "GH-567-IJ",
+        "couleur": "Noir",
+        "poids": 1180,
+        "date_arrive": "2022-09-30"
+      }
+    },
+    {
+      "model": "CarManagement.vehicule",
+      "pk": 10,
+      "fields": {
+        "proprietaire": 3,
+        "carburant": "Essence",
+        "libelle": "Opel Corsa",
+        "immatriculation": "KL-890-MN",
+        "couleur": "Blanc",
+        "poids": 1300,
+        "date_arrive": "2022-10-10"
+      }
+    },
+    {
+      "model": "CarManagement.vehicule",
+      "pk": 11,
+      "fields": {
+        "proprietaire": 4,
+        "carburant": "Essence",
+        "libelle": "Nissan Micra",
+        "immatriculation": "OP-123-QR",
+        "couleur": "Bleu",
+        "poids": 1200,
+        "date_arrive": "2022-11-20"
+      }
+    },
+    {
+      "model": "CarManagement.vehicule",
+      "pk": 12,
+      "fields": {
+        "proprietaire": 5,
+        "carburant": "Diesel",
+        "libelle": "Hyundai i20",
+        "immatriculation": "ST-456-UV",
+        "couleur": "Gris",
+        "poids": 1280,
+        "date_arrive": "2022-12-05"
+      }
+    },
+    {
+      "model": "CarManagement.vehicule",
+      "pk": 13,
+      "fields": {
+        "proprietaire": 6,
+        "carburant": "Essence",
+        "libelle": "Citroën C3",
+        "immatriculation": "WX-789-YZ",
+        "couleur": "Noir",
+        "poids": 1320,
+        "date_arrive": "2023-01-15"
+      }
+    },
+    {
+      "model": "CarManagement.vehicule",
+      "pk": 14,
+      "fields": {
+        "proprietaire": 7,
+        "carburant": "Diesel",
+        "libelle": "Kia Rio",
+        "immatriculation": "AB-901-CD",
+        "couleur": "Blanc",
+        "poids": 1260,
+        "date_arrive": "2023-02-20"
+      }
+    },
+    {
+      "model": "CarManagement.vehicule",
+      "pk": 15,
+      "fields": {
+        "proprietaire": 1,
+        "carburant": "Essence",
+        "libelle": "Skoda Fabia",
+        "immatriculation": "EF-234-GH",
+        "couleur": "Rouge",
+        "poids": 1240,
+        "date_arrive": "2023-03-10"
+      }
+    },
+    {
+      "model": "CarManagement.vehicule",
+      "pk": 16,
+      "fields": {
+        "proprietaire": 2,
+        "carburant": "Diesel",
+        "libelle": "Renault Twingo",
+        "immatriculation": "IJ-567-KL",
+        "couleur": "Noir",
+        "poids": 1300,
+        "date_arrive": "2023-04-05"
+      }
+    }
+  ]
+  

@@ -1,0 +1,25 @@
+{% extends 'template/base.html' %}
+
+{% block content %}
+<div class="content-wrapper">
+    <div class="col-md-9 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                {% if pk %}
+                    <h4 class="card-title">Modifier L'etat de la panne pour l'entrée: <span style="color: aqua;">{{object.piece.libelle}}</span> de la panne <span style="color: aqua;">{{object.panne.libelle}}</span></h4>
+                {% else %}
+                    <!-- <h4 class="card-title">Ajouter la quantite</h4> -->
+                {% endif %}
+                <form method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        {{ form.resolu.label_tag }}
+                        {{ form.resolu }}
+                    </div>
+                    <button type="submit" class="btn btn-primary">Valider</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

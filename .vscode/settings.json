@@ -1,0 +1,9 @@
+// {
+//     "html.format.indentHandlebars": true,
+//     "html.format.indentInnerHtml": true,
+//     "html.format.templating": true,
+//     "editor.formatOnSave": true,
+//     "editor.formatOnPaste": true,
+//     "editor.formatOnType": true,
+//     "prettier.enable": true
+// }

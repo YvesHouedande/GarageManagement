@@ -1,0 +1,49 @@
+{% extends 'template/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="content-wrapper">
+    <!-- #######################titre diviseur-->
+    <div class="col-lg-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Liste des Entrées Pour le vehicule: <span style="color: aqua;">{{object.libelle}}</span></h4>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Moment</th>
+                                <th>Nombres de Technicien</th>
+                                <th>Nombre de Pannes</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            {% for object in objects %}
+                            <tr>
+                                <td>{{object.moment}}</td>
+                                <td>{{object.techniciens.all.count}} </td>
+                                <td>{{object.pannes.all.count}}</td>
+                                <td>{{object.quantite}}</td>
+                                <td><a href="{% url 'entre_vehicule_panne-list' pk=object.pk %}"
+                                        class="btn btn-primary ">resoudre</a>
+
+                                        <a href="{% url 'entre_vehicule-update' pk=object.pk %}"
+                                        class="btn btn-primary ">Modifier</a>
+
+                                    <a href="{% url 'entre_vehicule-detail' pk=object.pk %}" class="btn btn-info ">Voire</a>
+
+                                    <a href="{% url 'confirm-delete' klass='EntreVehicule' pk=object.pk %}"
+                                        class="btn btn-danger ">supprimer</a>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

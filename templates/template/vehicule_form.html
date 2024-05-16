@@ -1,0 +1,55 @@
+{% extends 'template/base.html' %}
+
+{% block content %}
+<div class="content-wrapper">
+    <div class="col-md-6 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                
+                {% if pk %}
+                    <h4 class="card-title">Modifier le vehicule Vehicule</h4>
+                {% else %}
+                    <h4 class="card-title">Ajouter un nouveau Vehicule</h4>
+                {% endif %}
+                    
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        {{ form.proprietaire.label_tag }}
+                        {{ form.proprietaire }}
+                    </div>
+                    <div class="form-group">
+                        {{ form.immatriculation.label_tag }}
+                        {{ form.immatriculation }}
+                    </div>
+                    <div class="form-group">
+                        {{ form.carburant.label_tag }}
+                        {{ form.carburant }}
+                    </div>
+                    <div class="form-group">
+                        {{ form.libelle.label_tag }}
+                        {{ form.libelle }}
+                    </div>
+                    <div class="form-group">
+                        {{ form.model.label_tag }}
+                        {{ form.model }}
+                    </div>
+                    <div class="form-group">
+                        {{ form.couleur.label_tag }}
+                        {{ form.couleur }}
+                    </div>
+                    <div class="form-group">
+                        {{ form.poids.label_tag }} (kg)
+                        {{ form.poids }}
+                    </div>
+                    <div class="form-group">
+                        {{ form.date_arrive.label_tag }}
+                        {{ form.date_arrive }}
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enregistrer</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

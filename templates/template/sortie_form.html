@@ -1,0 +1,49 @@
+{% extends 'template/base.html' %}
+
+{% block content %}
+<div class="content-wrapper">
+<div class="col-md-6 grid-margin stretch-card">
+    <div class="card">
+      <div class="card-body">
+      {% if pk %}
+      <h4 class="card-title">Modifier la Sortie</h4>
+      {% else %}
+      <h4 class="card-title">Ajouter une Nouvelle Sortie</h4>
+      {% endif %}
+        <form method="post">
+          {% csrf_token %}
+          <div class="form-group">
+            {{ form.entre.label_tag }}
+            {{ form.entre }}
+            {% for error in form.entre.errors %}
+            <p class="text-danger">{{ error }}</p>
+            {% endfor %}
+          </div>
+          <div class="form-group">
+            {{ form.moment.label_tag }}
+            {{ form.moment }}
+            {% for error in form.moment.errors %}
+            <p class="text-danger">{{ error }}</p>
+            {% endfor %}
+          </div>
+          <div class="form-group">
+            {{ form.cout.label_tag }}
+            {{ form.cout }}
+            {% for error in form.cout.errors %}
+            <p class="text-danger">{{ error }}</p>
+            {% endfor %}
+          </div>
+          <div class="form-group">
+            {{ form.conclusion.label_tag }}
+            {{ form.conclusion }}
+            {% for error in form.conclusion.errors %}
+            <p class="text-danger">{{ error }}</p>
+            {% endfor %}
+          </div>
+          <button type="submit" class="btn btn-primary">Enregistrer</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

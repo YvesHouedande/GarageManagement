@@ -1,0 +1,48 @@
+{% extends 'template/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="content-wrapper">
+    <!-- #######################titre diviseur-->
+    <div class="col-lg-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Liste des Pieces Pour la Panne: {{object}}</h4>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Libelle</th>
+                                <th>Prix Unitaire</th>
+                                <th>Reference</th>
+                                <th>Quantite</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            {% for object in objects %}
+                            <tr>
+                                <td>{{object.piece.libelle}}</td>
+                                <td>{{object.piece.prix}} fr cfa</td>
+                                <td>{{object.piece.ref}}</td>
+                                <td>{{object.quantite}}</td>
+                                <td><a href="{% url 'quantite-update' pk=object.pk %}"
+                                        class="btn btn-primary ">Modifier la quantité</a>
+
+                                    <a href="{% url 'piece-detail' pk=object.piece.pk %}" class="btn btn-info ">Voire</a>
+
+                                    <a href="{% url 'confirm-delete' klass='QuantitePiece' pk=object.pk %}"
+                                        class="btn btn-danger ">supprimer</a>
+
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends 'template/base.html' %}
+
+{% block content %}
+<div class="content-wrapper">
+    <div class="col-md-6 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                {% if pk %}
+                <h4 class="card-title">Modifier la piece</h4>
+                {% else %}
+                <h4 class="card-title">Ajouter Une piece</h4>
+                {% endif %}
+                <form method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        {{ form.libelle.label_tag }}
+                        {{ form.libelle }}
+                    </div>
+                    <div class="form-group">
+                        {{ form.ref.label_tag }}
+                        {{ form.ref }}
+                    </div>
+                    <div class="form-group">
+                        {{ form.image.label_tag}}
+                        {{ form.image }}
+                    </div>
+                    <div class="form-group">
+                        {{ form.desc.label_tag }}
+                        {{ form.desc }}
+                    </div>
+                    <div class="form-group">
+                        {{ form.prix.label_tag }}
+                        {{ form.prix }}
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enregistrer</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
